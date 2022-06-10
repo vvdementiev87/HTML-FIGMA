@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+$primary-color: #C8A35F;
+$secondary-color: #2F343A;
+$primary-text-color: #FFFFFF;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    a{
+        font-family: 'Roboto';
+    }
+}
+.page{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container{
+    margin: 0 auto;
+    max-width: 1140px;
+    padding: 0 15px;
+}
+.header{
+    background-color: $primary-color;
+    & h6{
+        color: $primary-text-color;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+    }    
+    &__wrapper{
+        min-height: 45px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__left{
+        display: flex;        
+        & h6:not(:last-child){
+            padding-right: 10px;
+        }
+    }  
+}
+.main{
+    height:100%;
+    background-color: $secondary-color;
+     
+}
+.line{    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    & a{
+        text-decoration: none;
+        color: $primary-text-color;
+    }   
+    &__left{
+        display: flex;
+        align-items: center;
+    }
+    &__logo{
+        padding-right: 30px;
+        border-right: #FFFFFF 1px solid;
+    }
+    &__pointer{        
+        padding-left: 30px;
+        display: flex;
+        align-items: center;
+        & h6{
+            padding-left: 14px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+    &__menu{
+        display: flex;
+        justify-content: space-between;
+        & a:not(:first-child){
+            padding-left: 30px;
+        }
+        & h5{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+}
+.first__screen{
+    min-height: 620px;
+    background: linear-gradient(0deg, rgba(47, 52, 58, 0.75), rgba(47, 52, 58, 0.75)), url(/img/trucking.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 155px;
+    padding-bottom: 50px;
+    &__text{
+        max-width: 920px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 45px 70px 45px;
+        border:$primary-color 1px solid;
+        & :first-child{
+            margin-bottom: 45px;
+        }
+        & h1{
+            color: $primary-text-color;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 64px;
+            line-height: 75px;
+            text-align: center;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+        & h3{
+            color: $primary-text-color;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+            text-align: center;
+        }
+    }
+}
+.services{
+    background-color: #393F47;
+    width: 100%;  
+    &--background{
+        min-height: 482px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }    
+    &__button{
+        margin-top: 50px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 25px;
+        text-align: center;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        border: none;
+        padding:18px 48px;
+        background-color: #C8A35F;
+    }
+    &__back{
+        z-index: 2;
+        position: absolute;
+        left: 50%;
+        width: 410px;
+        margin-left:-205px;
+        height: 100%;
+        background-color: $secondary-color;
+    }
+    & h2{
+        margin-top: 40px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 49px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase; 
+        color: $primary-text-color;
+    }
+    & p{
+        margin-top:  30px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 23px; 
+        color: $primary-text-color;
+    }
+    &__line{
+        width:90px;
+        border-top: $primary-color 6px solid;
+    }
+    &__left{
+        margin-top: 80px;
+        z-index: 10;
+        padding-right: 65px;
+    }
+    &__right{
+        margin-top: 80px;
+        padding-top: 40px;
+        z-index: 11;
+        height: 100%;
+        display: flex;
+    }
+    &__nav{
+        width: 161px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        & p{
+            margin: 0;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 25px;
+            text-align: center;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #C8A35F;
+        }
+    }
+    &__next{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__prev{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+}
+.all__services{
+    margin-top: 120px;
+    & h2{
+        margin-top: 40px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 49px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase; 
+        color: $primary-text-color;
+    } 
+    &__line{
+        width:90px;
+        border-top: $primary-color 6px solid;
+    }
+    &__grid{
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        align-items: center;
+        justify-content: center;
+    }
+    &__box{
+        padding-top: 35px;
+        padding-bottom: 35px;
+        width: 276px;
+        height: 180px;
+        border:0.25px solid #C8A35F;
+        background-color: #393F47;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        & h3{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 22px;
+            text-align: center;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+        &:hover{
+            background-color: #C8A35F;
+
+        }
+        &:hover .all__services__img{
+            background-color:#FFFFFF;
+            & path{
+                fill:#000000;
+            }
+        }
+        
+    }
+    &__img{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70px;
+        height: 70px;
+        border-radius: 35px;
+    }
+}
+.about__company{
+    margin-top: 120px;
+    margin-bottom: 120px;
+    min-height: 482px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    &__back{
+        z-index: 1;
+        position: absolute;
+        left: 50%;
+        width: 410px;
+        margin-left:-205px;
+        height: 100%;
+        background-color: #393F47;
+    }
+    & h2{
+        margin-top: 40px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 49px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase; 
+        color: $primary-text-color;
+    }
+    & p{
+        margin-top:  30px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 23px; 
+        color: $primary-text-color;
+    }
+    &__line{
+        width:90px;
+        border-top: $primary-color 6px solid;
+    }
+    &__left{
+        margin-top: 80px;
+        z-index: 2;
+        padding-right: 65px;
+    }
+    &__right{
+        margin-top: 80px;
+        z-index: 2;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    &__grid{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        align-items: center;
+        justify-content: center;
+
+    }
+    &__box{
+        padding-top: 23px;
+        padding-bottom: 25px;
+        width: 200px;
+        height: 180px;
+        border:0.25px solid #C8A35F;
+        background-color: #FFFFFF;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        & h1{
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 64px;
+            line-height: 75px;
+            text-align: center;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: #2F343A;
+        }
+        & h3{
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 21px;
+            text-align: center;
+            letter-spacing: 0.05em;
+            color: #000000;
+        }
+        & h5{
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            text-align: center;
+            color: #000000;
+        }
+        &--img{
+            background: url(/img/trucking-1.jpg), #C4C4C4; 
+            background-size: cover;
+        }
+    }
+}
+.maps{
+    background: linear-gradient(0deg, rgba(57, 63, 71, 0.6), rgba(57, 63, 71, 0.6)), url(/img/maps.png);
+    min-height: 450px;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    min-height: 161px;    
+    background-color: $primary-color;
+    &__wrapper{
+        width:100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        & h5{
+            color: #F2F2F2;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            & span{
+                color: $secondary-color; 
+            }
+        }
+    }
+    &__text{
+        padding-left: 30px;
+        padding-right: 25px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    &__logo{
+        max-width: 160px;
+    }
+}
